@@ -1,0 +1,28 @@
+2022-08-28 14:22:45,271 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:55] Starting SensitiveTests using Java 1.8.0_332 on DESKTOP-9KE8JKH with PID 15508 (started by 15541 in E:\SpringBoot\community)
+2022-08-28 14:22:45,283 INFO [main] c.n.c.SensitiveTests [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2022-08-28 14:22:47,566 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2022-08-28 14:22:47,905 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:61] Started SensitiveTests in 3.149 seconds (JVM running for 4.199)
+2022-08-28 14:24:40,417 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:55] Starting SensitiveTests using Java 1.8.0_332 on DESKTOP-9KE8JKH with PID 16288 (started by 15541 in E:\SpringBoot\community)
+2022-08-28 14:24:40,420 INFO [main] c.n.c.SensitiveTests [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2022-08-28 14:24:42,383 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2022-08-28 14:24:42,749 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:61] Started SensitiveTests in 2.862 seconds (JVM running for 3.775)
+2022-08-28 22:50:48,954 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:55] Starting CommunityApplication using Java 1.8.0_332 on DESKTOP-9KE8JKH with PID 19960 (E:\SpringBoot\community\target\classes started by 15541 in E:\SpringBoot\community)
+2022-08-28 22:50:48,981 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2022-08-28 22:50:49,032 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-08-28 22:50:49,032 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-08-28 22:50:50,101 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8081 (http)
+2022-08-28 22:50:50,109 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8081"]
+2022-08-28 22:50:50,110 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2022-08-28 22:50:50,110 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-28 22:50:50,190 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2022-08-28 22:50:50,191 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:292] Root WebApplicationContext: initialization completed in 1158 ms
+2022-08-28 22:50:50,693 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2022-08-28 22:50:50,831 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2022-08-28 22:50:50,843 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8081"]
+2022-08-28 22:50:50,856 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8081 (http) with context path '/community'
+2022-08-28 22:50:50,865 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:61] Started CommunityApplication in 2.364 seconds (JVM running for 3.454)
+2022-08-28 22:50:59,340 INFO [http-nio-8081-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-28 22:50:59,341 INFO [http-nio-8081-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2022-08-28 22:50:59,342 INFO [http-nio-8081-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 1 ms
+2022-08-28 22:50:59,409 INFO [http-nio-8081-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2022-08-28 22:51:00,168 INFO [http-nio-8081-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.

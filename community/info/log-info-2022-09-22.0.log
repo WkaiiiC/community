@@ -1,0 +1,839 @@
+2022-09-22 16:17:00,030 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:55] Starting CommunityApplication using Java 1.8.0_332 on DESKTOP-9KE8JKH with PID 29496 (E:\SpringBoot\community\target\classes started by 15541 in E:\SpringBoot\community)
+2022-09-22 16:17:00,035 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2022-09-22 16:17:00,074 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-09-22 16:17:00,075 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-09-22 16:17:02,570 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8081 (http)
+2022-09-22 16:17:02,570 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2022-09-22 16:17:02,571 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-09-22 16:17:02,571 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-09-22 16:17:02,584 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2022-09-22 16:17:02,591 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8081"]
+2022-09-22 16:17:02,591 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2022-09-22 16:17:02,591 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-22 16:17:02,672 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2022-09-22 16:17:02,672 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:292] Root WebApplicationContext: initialization completed in 2593 ms
+2022-09-22 16:17:03,440 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2022-09-22 16:17:03,737 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2022-09-22 16:17:03,754 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8081"]
+2022-09-22 16:17:03,768 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8081 (http) with context path '/community'
+2022-09-22 16:17:03,777 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:61] Started CommunityApplication in 4.213 seconds (JVM running for 5.37)
+2022-09-22 16:17:12,926 INFO [http-nio-8081-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-22 16:17:12,926 INFO [http-nio-8081-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2022-09-22 16:17:12,927 INFO [http-nio-8081-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 0 ms
+2022-09-22 16:17:12,964 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 16:17:12],访问了[com.nowcoder.community.service.DiscussPostService.findDiscussPostRows].
+2022-09-22 16:17:12,993 INFO [http-nio-8081-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2022-09-22 16:17:13,148 INFO [http-nio-8081-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2022-09-22 16:17:13,218 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 16:17:13],访问了[com.nowcoder.community.service.DiscussPostService.findDiscussPosts].
+2022-09-22 16:17:13,235 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 16:17:13],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 16:17:13,244 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 16:17:13],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 16:17:13,247 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 16:17:13],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 16:17:13,249 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 16:17:13],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 16:17:13,251 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 16:17:13],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 16:17:13,253 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 16:17:13],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 16:17:13,255 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 16:17:13],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 16:17:13,257 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 16:17:13],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 16:17:13,260 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 16:17:13],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 16:17:13,263 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 16:17:13],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 18:56:37,223 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2022-09-22 18:56:37,229 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2022-09-22 19:01:29,301 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:55] Starting CommunityApplication using Java 1.8.0_332 on DESKTOP-9KE8JKH with PID 37484 (E:\SpringBoot\community\target\classes started by 15541 in E:\SpringBoot\community)
+2022-09-22 19:01:29,302 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2022-09-22 19:01:29,340 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-09-22 19:01:29,340 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-09-22 19:01:29,889 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:262] Multiple Spring Data modules found, entering strict repository configuration mode
+2022-09-22 19:01:29,891 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-09-22 19:01:29,912 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2022-09-22 19:01:30,533 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8081 (http)
+2022-09-22 19:01:30,533 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2022-09-22 19:01:30,534 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-09-22 19:01:30,534 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-09-22 19:01:30,537 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2022-09-22 19:01:30,543 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8081"]
+2022-09-22 19:01:30,543 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2022-09-22 19:01:30,543 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-22 19:01:30,635 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2022-09-22 19:01:30,635 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:292] Root WebApplicationContext: initialization completed in 1295 ms
+2022-09-22 19:01:31,386 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2022-09-22 19:01:32,010 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2022-09-22 19:01:32,031 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8081"]
+2022-09-22 19:01:32,047 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8081 (http) with context path '/community'
+2022-09-22 19:01:32,056 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:61] Started CommunityApplication in 3.157 seconds (JVM running for 4.166)
+2022-09-22 19:01:38,570 INFO [http-nio-8081-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-22 19:01:38,570 INFO [http-nio-8081-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2022-09-22 19:01:38,571 INFO [http-nio-8081-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 1 ms
+2022-09-22 19:01:38,601 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:01:38],访问了[com.nowcoder.community.service.DiscussPostService.findDiscussPostRows].
+2022-09-22 19:01:38,626 INFO [http-nio-8081-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2022-09-22 19:01:38,746 INFO [http-nio-8081-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2022-09-22 19:01:38,797 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:01:38],访问了[com.nowcoder.community.service.DiscussPostService.findDiscussPosts].
+2022-09-22 19:01:38,807 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:01:38],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 19:01:38,816 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:01:38],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 19:01:38,819 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:01:38],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 19:01:38,822 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:01:38],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 19:01:38,825 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:01:38],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 19:01:38,829 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:01:38],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 19:01:38,832 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:01:38],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 19:01:38,835 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:01:38],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 19:01:38,837 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:01:38],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 19:01:38,840 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:01:38],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 19:01:45,205 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:01:45],访问了[com.nowcoder.community.service.UserService.login].
+2022-09-22 19:01:45,446 INFO [http-nio-8081-exec-3] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:01:45],访问了[com.nowcoder.community.service.UserService.findLoginTicket].
+2022-09-22 19:01:45,452 INFO [http-nio-8081-exec-3] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:01:45],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 19:01:45,456 INFO [http-nio-8081-exec-3] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:01:45],访问了[com.nowcoder.community.service.DiscussPostService.findDiscussPostRows].
+2022-09-22 19:01:45,460 INFO [http-nio-8081-exec-3] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:01:45],访问了[com.nowcoder.community.service.DiscussPostService.findDiscussPosts].
+2022-09-22 19:01:45,467 INFO [http-nio-8081-exec-3] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:01:45],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 19:01:45,469 INFO [http-nio-8081-exec-3] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:01:45],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 19:01:45,472 INFO [http-nio-8081-exec-3] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:01:45],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 19:01:45,475 INFO [http-nio-8081-exec-3] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:01:45],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 19:01:45,479 INFO [http-nio-8081-exec-3] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:01:45],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 19:01:45,482 INFO [http-nio-8081-exec-3] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:01:45],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 19:01:45,485 INFO [http-nio-8081-exec-3] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:01:45],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 19:01:45,487 INFO [http-nio-8081-exec-3] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:01:45],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 19:01:45,490 INFO [http-nio-8081-exec-3] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:01:45],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 19:01:45,493 INFO [http-nio-8081-exec-3] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:01:45],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 19:01:45,530 INFO [http-nio-8081-exec-6] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:01:45],访问了[com.nowcoder.community.service.UserService.findLoginTicket].
+2022-09-22 19:01:45,533 INFO [http-nio-8081-exec-6] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:01:45],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 19:01:55,061 INFO [http-nio-8081-exec-7] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:01:55],访问了[com.nowcoder.community.service.UserService.findLoginTicket].
+2022-09-22 19:01:55,065 INFO [http-nio-8081-exec-7] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:01:55],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 19:01:55,072 INFO [http-nio-8081-exec-7] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:01:55],访问了[com.nowcoder.community.service.UserService.logout].
+2022-09-22 19:01:55,086 INFO [http-nio-8081-exec-8] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:01:55],访问了[com.nowcoder.community.service.UserService.findLoginTicket].
+2022-09-22 19:01:55,138 INFO [http-nio-8081-exec-3] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:01:55],访问了[com.nowcoder.community.service.UserService.findLoginTicket].
+2022-09-22 19:02:00,438 INFO [http-nio-8081-exec-2] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:02:00],访问了[com.nowcoder.community.service.UserService.findLoginTicket].
+2022-09-22 19:02:12,918 INFO [http-nio-8081-exec-8] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:02:12],访问了[com.nowcoder.community.service.UserService.findLoginTicket].
+2022-09-22 19:02:12,923 INFO [http-nio-8081-exec-8] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:02:12],访问了[com.nowcoder.community.service.UserService.register].
+2022-09-22 19:02:23,798 INFO [http-nio-8081-exec-9] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:02:23],访问了[com.nowcoder.community.service.UserService.findLoginTicket].
+2022-09-22 19:02:23,800 INFO [http-nio-8081-exec-9] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:02:23],访问了[com.nowcoder.community.service.DiscussPostService.findDiscussPostRows].
+2022-09-22 19:02:23,802 INFO [http-nio-8081-exec-9] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:02:23],访问了[com.nowcoder.community.service.DiscussPostService.findDiscussPosts].
+2022-09-22 19:02:23,808 INFO [http-nio-8081-exec-9] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:02:23],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 19:02:23,811 INFO [http-nio-8081-exec-9] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:02:23],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 19:02:23,815 INFO [http-nio-8081-exec-9] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:02:23],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 19:02:23,817 INFO [http-nio-8081-exec-9] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:02:23],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 19:02:23,819 INFO [http-nio-8081-exec-9] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:02:23],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 19:02:23,821 INFO [http-nio-8081-exec-9] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:02:23],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 19:02:23,824 INFO [http-nio-8081-exec-9] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:02:23],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 19:02:23,826 INFO [http-nio-8081-exec-9] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:02:23],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 19:02:23,827 INFO [http-nio-8081-exec-9] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:02:23],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 19:02:23,830 INFO [http-nio-8081-exec-9] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:02:23],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 19:02:23,892 INFO [http-nio-8081-exec-4] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:02:23],访问了[com.nowcoder.community.service.UserService.findLoginTicket].
+2022-09-22 19:03:47,848 INFO [http-nio-8081-exec-5] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:03:47],访问了[com.nowcoder.community.service.UserService.findLoginTicket].
+2022-09-22 19:03:47,852 INFO [http-nio-8081-exec-5] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:03:47],访问了[com.nowcoder.community.service.UserService.activation].
+2022-09-22 19:03:51,178 INFO [http-nio-8081-exec-10] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:03:51],访问了[com.nowcoder.community.service.UserService.findLoginTicket].
+2022-09-22 19:03:51,226 INFO [http-nio-8081-exec-3] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:03:51],访问了[com.nowcoder.community.service.UserService.findLoginTicket].
+2022-09-22 19:04:03,170 INFO [http-nio-8081-exec-4] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:04:03],访问了[com.nowcoder.community.service.UserService.findLoginTicket].
+2022-09-22 19:04:03,220 INFO [http-nio-8081-exec-8] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:04:03],访问了[com.nowcoder.community.service.UserService.findLoginTicket].
+2022-09-22 19:04:10,931 INFO [http-nio-8081-exec-10] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:04:10],访问了[com.nowcoder.community.service.UserService.findLoginTicket].
+2022-09-22 19:04:10,935 INFO [http-nio-8081-exec-10] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:04:10],访问了[com.nowcoder.community.service.UserService.login].
+2022-09-22 19:04:10,948 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:04:10],访问了[com.nowcoder.community.service.UserService.findLoginTicket].
+2022-09-22 19:04:10,951 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:04:10],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 19:04:10,953 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:04:10],访问了[com.nowcoder.community.service.DiscussPostService.findDiscussPostRows].
+2022-09-22 19:04:10,955 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:04:10],访问了[com.nowcoder.community.service.DiscussPostService.findDiscussPosts].
+2022-09-22 19:04:10,958 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:04:10],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 19:04:10,960 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:04:10],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 19:04:10,962 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:04:10],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 19:04:10,964 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:04:10],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 19:04:10,966 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:04:10],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 19:04:10,968 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:04:10],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 19:04:10,970 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:04:10],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 19:04:10,972 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:04:10],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 19:04:10,973 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:04:10],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 19:04:10,975 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:04:10],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 19:04:11,034 INFO [http-nio-8081-exec-3] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:04:11],访问了[com.nowcoder.community.service.UserService.findLoginTicket].
+2022-09-22 19:04:11,037 INFO [http-nio-8081-exec-3] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:04:11],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 19:04:14,919 INFO [http-nio-8081-exec-6] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:04:14],访问了[com.nowcoder.community.service.UserService.findLoginTicket].
+2022-09-22 19:04:14,926 INFO [http-nio-8081-exec-6] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:04:14],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 19:04:14,929 INFO [http-nio-8081-exec-6] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:04:14],访问了[com.nowcoder.community.service.DiscussPostService.findDiscussPostRows].
+2022-09-22 19:04:14,930 INFO [http-nio-8081-exec-6] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:04:14],访问了[com.nowcoder.community.service.DiscussPostService.findDiscussPosts].
+2022-09-22 19:04:14,933 INFO [http-nio-8081-exec-6] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:04:14],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 19:04:14,934 INFO [http-nio-8081-exec-6] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:04:14],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 19:04:14,936 INFO [http-nio-8081-exec-6] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:04:14],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 19:04:14,937 INFO [http-nio-8081-exec-6] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:04:14],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 19:04:14,939 INFO [http-nio-8081-exec-6] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:04:14],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 19:04:14,941 INFO [http-nio-8081-exec-6] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:04:14],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 19:04:14,944 INFO [http-nio-8081-exec-6] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:04:14],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 19:04:14,945 INFO [http-nio-8081-exec-6] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:04:14],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 19:04:14,947 INFO [http-nio-8081-exec-6] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:04:14],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 19:04:14,948 INFO [http-nio-8081-exec-6] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:04:14],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 19:04:14,997 INFO [http-nio-8081-exec-8] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:04:14],访问了[com.nowcoder.community.service.UserService.findLoginTicket].
+2022-09-22 19:04:14,999 INFO [http-nio-8081-exec-8] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 19:04:14],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 19:18:04,375 INFO [Thread-12] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2022-09-22 19:18:04,380 INFO [Thread-12] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2022-09-22 19:18:04,606 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:55] Starting CommunityApplication using Java 1.8.0_332 on DESKTOP-9KE8JKH with PID 37484 (E:\SpringBoot\community\target\classes started by 15541 in E:\SpringBoot\community)
+2022-09-22 19:18:04,607 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2022-09-22 19:18:04,813 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:262] Multiple Spring Data modules found, entering strict repository configuration mode
+2022-09-22 19:18:04,814 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-09-22 19:18:04,819 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2022-09-22 19:18:05,093 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8081 (http)
+2022-09-22 19:18:05,094 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2022-09-22 19:18:05,094 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-09-22 19:18:05,094 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-09-22 19:18:05,094 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2022-09-22 19:18:05,095 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8081"]
+2022-09-22 19:18:05,095 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2022-09-22 19:18:05,096 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-22 19:18:05,137 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2022-09-22 19:18:05,137 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:292] Root WebApplicationContext: initialization completed in 527 ms
+2022-09-22 19:18:05,748 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2022-09-22 19:18:06,194 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2022-09-22 19:18:06,211 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8081"]
+2022-09-22 19:18:06,214 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8081 (http) with context path '/community'
+2022-09-22 19:18:06,220 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:61] Started CommunityApplication in 1.659 seconds (JVM running for 998.331)
+2022-09-22 19:18:06,224 INFO [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [ConditionEvaluationDeltaLoggingListener.java:58] Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   RedisAutoConfiguration#redisTemplate:
+      Did not match:
+         - @ConditionalOnMissingBean (names: redisTemplate; SearchStrategy: all) found beans named redisTemplate (OnBeanCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2022-09-22 19:18:06,346 INFO [main] c.n.c.RedisTests [StartupInfoLogger.java:55] Starting RedisTests using Java 1.8.0_332 on DESKTOP-9KE8JKH with PID 37804 (started by 15541 in E:\SpringBoot\community)
+2022-09-22 19:18:06,348 INFO [main] c.n.c.RedisTests [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2022-09-22 19:18:07,058 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:262] Multiple Spring Data modules found, entering strict repository configuration mode
+2022-09-22 19:18:07,062 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-09-22 19:18:07,087 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2022-09-22 19:18:09,529 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2022-09-22 19:18:10,211 INFO [main] c.n.c.RedisTests [StartupInfoLogger.java:61] Started RedisTests in 4.274 seconds (JVM running for 5.448)
+2022-09-22 19:22:39,002 INFO [main] c.n.c.RedisTests [StartupInfoLogger.java:55] Starting RedisTests using Java 1.8.0_332 on DESKTOP-9KE8JKH with PID 33896 (started by 15541 in E:\SpringBoot\community)
+2022-09-22 19:22:39,004 INFO [main] c.n.c.RedisTests [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2022-09-22 19:22:39,660 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:262] Multiple Spring Data modules found, entering strict repository configuration mode
+2022-09-22 19:22:39,663 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-09-22 19:22:39,686 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2022-09-22 19:22:42,166 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2022-09-22 19:22:42,832 INFO [main] c.n.c.RedisTests [StartupInfoLogger.java:61] Started RedisTests in 4.241 seconds (JVM running for 5.196)
+2022-09-22 19:25:36,012 INFO [main] c.n.c.RedisTests [StartupInfoLogger.java:55] Starting RedisTests using Java 1.8.0_332 on DESKTOP-9KE8JKH with PID 32952 (started by 15541 in E:\SpringBoot\community)
+2022-09-22 19:25:36,014 INFO [main] c.n.c.RedisTests [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2022-09-22 19:25:36,677 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:262] Multiple Spring Data modules found, entering strict repository configuration mode
+2022-09-22 19:25:36,680 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-09-22 19:25:36,704 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2022-09-22 19:25:39,115 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2022-09-22 19:25:39,765 INFO [main] c.n.c.RedisTests [StartupInfoLogger.java:61] Started RedisTests in 4.151 seconds (JVM running for 5.094)
+2022-09-22 19:30:42,785 INFO [main] c.n.c.RedisTests [StartupInfoLogger.java:55] Starting RedisTests using Java 1.8.0_332 on DESKTOP-9KE8JKH with PID 11372 (started by 15541 in E:\SpringBoot\community)
+2022-09-22 19:30:42,787 INFO [main] c.n.c.RedisTests [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2022-09-22 19:30:43,510 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:262] Multiple Spring Data modules found, entering strict repository configuration mode
+2022-09-22 19:30:43,513 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-09-22 19:30:43,541 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2022-09-22 19:30:45,995 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2022-09-22 19:30:46,712 INFO [main] c.n.c.RedisTests [StartupInfoLogger.java:61] Started RedisTests in 4.339 seconds (JVM running for 5.289)
+2022-09-22 19:42:11,023 INFO [main] c.n.c.RedisTests [StartupInfoLogger.java:55] Starting RedisTests using Java 1.8.0_332 on DESKTOP-9KE8JKH with PID 38796 (started by 15541 in E:\SpringBoot\community)
+2022-09-22 19:42:11,025 INFO [main] c.n.c.RedisTests [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2022-09-22 19:42:11,707 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:262] Multiple Spring Data modules found, entering strict repository configuration mode
+2022-09-22 19:42:11,711 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-09-22 19:42:11,736 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2022-09-22 19:42:14,261 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2022-09-22 19:42:14,877 INFO [main] c.n.c.RedisTests [StartupInfoLogger.java:61] Started RedisTests in 4.49 seconds (JVM running for 5.588)
+2022-09-22 19:43:20,806 INFO [main] c.n.c.RedisTests [StartupInfoLogger.java:55] Starting RedisTests using Java 1.8.0_332 on DESKTOP-9KE8JKH with PID 38332 (started by 15541 in E:\SpringBoot\community)
+2022-09-22 19:43:20,808 INFO [main] c.n.c.RedisTests [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2022-09-22 19:43:21,474 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:262] Multiple Spring Data modules found, entering strict repository configuration mode
+2022-09-22 19:43:21,478 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-09-22 19:43:21,503 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2022-09-22 19:43:23,983 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2022-09-22 19:43:24,645 INFO [main] c.n.c.RedisTests [StartupInfoLogger.java:61] Started RedisTests in 4.238 seconds (JVM running for 5.228)
+2022-09-22 19:44:10,761 INFO [main] c.n.c.RedisTests [StartupInfoLogger.java:55] Starting RedisTests using Java 1.8.0_332 on DESKTOP-9KE8JKH with PID 38376 (started by 15541 in E:\SpringBoot\community)
+2022-09-22 19:44:10,762 INFO [main] c.n.c.RedisTests [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2022-09-22 19:44:11,424 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:262] Multiple Spring Data modules found, entering strict repository configuration mode
+2022-09-22 19:44:11,428 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-09-22 19:44:11,453 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2022-09-22 19:44:13,920 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2022-09-22 19:44:14,538 INFO [main] c.n.c.RedisTests [StartupInfoLogger.java:61] Started RedisTests in 4.169 seconds (JVM running for 5.127)
+2022-09-22 19:44:42,852 INFO [main] c.n.c.RedisTests [StartupInfoLogger.java:55] Starting RedisTests using Java 1.8.0_332 on DESKTOP-9KE8JKH with PID 36760 (started by 15541 in E:\SpringBoot\community)
+2022-09-22 19:44:42,853 INFO [main] c.n.c.RedisTests [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2022-09-22 19:44:43,539 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:262] Multiple Spring Data modules found, entering strict repository configuration mode
+2022-09-22 19:44:43,542 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-09-22 19:44:43,572 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2022-09-22 19:44:45,999 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2022-09-22 19:44:46,637 INFO [main] c.n.c.RedisTests [StartupInfoLogger.java:61] Started RedisTests in 4.17 seconds (JVM running for 5.152)
+2022-09-22 19:47:37,504 INFO [main] c.n.c.RedisTests [StartupInfoLogger.java:55] Starting RedisTests using Java 1.8.0_332 on DESKTOP-9KE8JKH with PID 38108 (started by 15541 in E:\SpringBoot\community)
+2022-09-22 19:47:37,505 INFO [main] c.n.c.RedisTests [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2022-09-22 19:47:38,164 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:262] Multiple Spring Data modules found, entering strict repository configuration mode
+2022-09-22 19:47:38,167 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-09-22 19:47:38,192 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2022-09-22 19:47:40,641 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2022-09-22 19:47:41,306 INFO [main] c.n.c.RedisTests [StartupInfoLogger.java:61] Started RedisTests in 4.212 seconds (JVM running for 5.187)
+2022-09-22 19:53:39,279 INFO [main] c.n.c.RedisTests [StartupInfoLogger.java:55] Starting RedisTests using Java 1.8.0_332 on DESKTOP-9KE8JKH with PID 35912 (started by 15541 in E:\SpringBoot\community)
+2022-09-22 19:53:39,281 INFO [main] c.n.c.RedisTests [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2022-09-22 19:53:39,942 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:262] Multiple Spring Data modules found, entering strict repository configuration mode
+2022-09-22 19:53:39,945 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-09-22 19:53:39,970 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2022-09-22 19:53:42,510 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2022-09-22 19:53:43,159 INFO [main] c.n.c.RedisTests [StartupInfoLogger.java:61] Started RedisTests in 4.264 seconds (JVM running for 5.213)
+2022-09-22 20:00:37,351 INFO [main] c.n.c.RedisTests [StartupInfoLogger.java:55] Starting RedisTests using Java 1.8.0_332 on DESKTOP-9KE8JKH with PID 36724 (started by 15541 in E:\SpringBoot\community)
+2022-09-22 20:00:37,352 INFO [main] c.n.c.RedisTests [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2022-09-22 20:00:37,996 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:262] Multiple Spring Data modules found, entering strict repository configuration mode
+2022-09-22 20:00:37,999 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-09-22 20:00:38,022 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2022-09-22 20:00:40,483 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2022-09-22 20:00:41,155 INFO [main] c.n.c.RedisTests [StartupInfoLogger.java:61] Started RedisTests in 4.215 seconds (JVM running for 5.185)
+2022-09-22 21:40:45,873 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:55] Starting CommunityApplication using Java 1.8.0_332 on DESKTOP-9KE8JKH with PID 37484 (E:\SpringBoot\community\target\classes started by 15541 in E:\SpringBoot\community)
+2022-09-22 21:40:45,874 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2022-09-22 21:40:46,010 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:55] Starting CommunityApplication using Java 1.8.0_332 on DESKTOP-9KE8JKH with PID 39700 (E:\SpringBoot\community\target\classes started by 15541 in E:\SpringBoot\community)
+2022-09-22 21:40:46,012 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2022-09-22 21:40:46,045 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-09-22 21:40:46,045 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-09-22 21:40:46,081 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:262] Multiple Spring Data modules found, entering strict repository configuration mode
+2022-09-22 21:40:46,082 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-09-22 21:40:46,085 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2022-09-22 21:40:46,309 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8081 (http)
+2022-09-22 21:40:46,309 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2022-09-22 21:40:46,310 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-09-22 21:40:46,310 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-09-22 21:40:46,310 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2022-09-22 21:40:46,310 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8081"]
+2022-09-22 21:40:46,311 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2022-09-22 21:40:46,311 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-22 21:40:46,344 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2022-09-22 21:40:46,344 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:292] Root WebApplicationContext: initialization completed in 467 ms
+2022-09-22 21:40:46,587 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:262] Multiple Spring Data modules found, entering strict repository configuration mode
+2022-09-22 21:40:46,589 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-09-22 21:40:46,610 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2022-09-22 21:40:46,767 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2022-09-22 21:40:47,066 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2022-09-22 21:40:47,078 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8081"]
+2022-09-22 21:40:47,079 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8081 (http) with context path '/community'
+2022-09-22 21:40:47,082 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:61] Started CommunityApplication in 1.259 seconds (JVM running for 9559.193)
+2022-09-22 21:40:47,083 INFO [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [ConditionEvaluationDeltaLoggingListener.java:63] Condition evaluation unchanged
+2022-09-22 21:40:47,213 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8081 (http)
+2022-09-22 21:40:47,214 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2022-09-22 21:40:47,215 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-09-22 21:40:47,215 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-09-22 21:40:47,217 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2022-09-22 21:40:47,223 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8081"]
+2022-09-22 21:40:47,224 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2022-09-22 21:40:47,224 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-22 21:40:47,317 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2022-09-22 21:40:47,317 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:292] Root WebApplicationContext: initialization completed in 1271 ms
+2022-09-22 21:40:48,225 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2022-09-22 21:40:48,645 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8081"]
+2022-09-22 21:40:48,662 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Pausing ProtocolHandler ["http-nio-8081"]
+2022-09-22 21:40:48,662 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
+2022-09-22 21:40:48,666 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Stopping ProtocolHandler ["http-nio-8081"]
+2022-09-22 21:40:48,667 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Destroying ProtocolHandler ["http-nio-8081"]
+2022-09-22 21:40:48,673 INFO [restartedMain] o.s.b.a.l.ConditionEvaluationReportLoggingListener [ConditionEvaluationReportLoggingListener.java:136] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-09-22 21:41:41,485 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:55] Starting CommunityApplication using Java 1.8.0_332 on DESKTOP-9KE8JKH with PID 37484 (E:\SpringBoot\community\target\classes started by 15541 in E:\SpringBoot\community)
+2022-09-22 21:41:41,485 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2022-09-22 21:41:41,668 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:262] Multiple Spring Data modules found, entering strict repository configuration mode
+2022-09-22 21:41:41,668 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-09-22 21:41:41,678 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2022-09-22 21:41:41,946 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 5032 (http)
+2022-09-22 21:41:41,947 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2022-09-22 21:41:41,947 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-09-22 21:41:41,947 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-09-22 21:41:41,947 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2022-09-22 21:41:41,948 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-5032"]
+2022-09-22 21:41:41,948 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2022-09-22 21:41:41,949 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-22 21:41:41,983 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2022-09-22 21:41:41,984 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:292] Root WebApplicationContext: initialization completed in 496 ms
+2022-09-22 21:41:42,283 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:55] Starting CommunityApplication using Java 1.8.0_332 on DESKTOP-9KE8JKH with PID 38872 (E:\SpringBoot\community\target\classes started by 15541 in E:\SpringBoot\community)
+2022-09-22 21:41:42,285 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2022-09-22 21:41:42,320 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-09-22 21:41:42,320 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-09-22 21:41:42,471 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2022-09-22 21:41:42,808 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2022-09-22 21:41:42,819 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-5032"]
+2022-09-22 21:41:42,832 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 5032 (http) with context path '/community'
+2022-09-22 21:41:42,835 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:61] Started CommunityApplication in 1.387 seconds (JVM running for 9614.946)
+2022-09-22 21:41:42,836 INFO [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [ConditionEvaluationDeltaLoggingListener.java:63] Condition evaluation unchanged
+2022-09-22 21:41:42,871 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:262] Multiple Spring Data modules found, entering strict repository configuration mode
+2022-09-22 21:41:42,872 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-09-22 21:41:42,890 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2022-09-22 21:41:43,464 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 5032 (http)
+2022-09-22 21:41:43,465 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2022-09-22 21:41:43,465 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-09-22 21:41:43,465 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-09-22 21:41:43,468 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2022-09-22 21:41:43,474 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-5032"]
+2022-09-22 21:41:43,474 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2022-09-22 21:41:43,475 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-22 21:41:43,568 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2022-09-22 21:41:43,569 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:292] Root WebApplicationContext: initialization completed in 1248 ms
+2022-09-22 21:41:44,466 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2022-09-22 21:41:44,885 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-5032"]
+2022-09-22 21:41:44,901 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Pausing ProtocolHandler ["http-nio-5032"]
+2022-09-22 21:41:44,902 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
+2022-09-22 21:41:44,905 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Stopping ProtocolHandler ["http-nio-5032"]
+2022-09-22 21:41:44,905 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Destroying ProtocolHandler ["http-nio-5032"]
+2022-09-22 21:41:44,911 INFO [restartedMain] o.s.b.a.l.ConditionEvaluationReportLoggingListener [ConditionEvaluationReportLoggingListener.java:136] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-09-22 21:41:57,052 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:55] Starting CommunityApplication using Java 1.8.0_332 on DESKTOP-9KE8JKH with PID 37484 (E:\SpringBoot\community\target\classes started by 15541 in E:\SpringBoot\community)
+2022-09-22 21:41:57,052 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2022-09-22 21:41:57,206 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:262] Multiple Spring Data modules found, entering strict repository configuration mode
+2022-09-22 21:41:57,206 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-09-22 21:41:57,212 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2022-09-22 21:41:57,357 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8888 (http)
+2022-09-22 21:41:57,357 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2022-09-22 21:41:57,358 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-09-22 21:41:57,358 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-09-22 21:41:57,358 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2022-09-22 21:41:57,358 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8888"]
+2022-09-22 21:41:57,359 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2022-09-22 21:41:57,359 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-22 21:41:57,389 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2022-09-22 21:41:57,389 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:292] Root WebApplicationContext: initialization completed in 335 ms
+2022-09-22 21:41:57,944 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2022-09-22 21:41:57,992 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:55] Starting CommunityApplication using Java 1.8.0_332 on DESKTOP-9KE8JKH with PID 39300 (E:\SpringBoot\community\target\classes started by 15541 in E:\SpringBoot\community)
+2022-09-22 21:41:57,993 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2022-09-22 21:41:58,025 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-09-22 21:41:58,026 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-09-22 21:41:58,288 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2022-09-22 21:41:58,299 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8888"]
+2022-09-22 21:41:58,301 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8888 (http) with context path '/community'
+2022-09-22 21:41:58,304 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:61] Started CommunityApplication in 1.282 seconds (JVM running for 9630.414)
+2022-09-22 21:41:58,306 INFO [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [ConditionEvaluationDeltaLoggingListener.java:63] Condition evaluation unchanged
+2022-09-22 21:41:58,541 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:262] Multiple Spring Data modules found, entering strict repository configuration mode
+2022-09-22 21:41:58,543 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-09-22 21:41:58,559 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2022-09-22 21:41:59,126 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8888 (http)
+2022-09-22 21:41:59,127 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2022-09-22 21:41:59,127 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-09-22 21:41:59,127 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-09-22 21:41:59,130 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2022-09-22 21:41:59,135 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8888"]
+2022-09-22 21:41:59,136 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2022-09-22 21:41:59,136 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-22 21:41:59,228 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2022-09-22 21:41:59,228 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:292] Root WebApplicationContext: initialization completed in 1202 ms
+2022-09-22 21:42:00,120 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2022-09-22 21:42:00,522 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8888"]
+2022-09-22 21:42:00,538 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Pausing ProtocolHandler ["http-nio-8888"]
+2022-09-22 21:42:00,538 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
+2022-09-22 21:42:00,541 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Stopping ProtocolHandler ["http-nio-8888"]
+2022-09-22 21:42:00,541 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Destroying ProtocolHandler ["http-nio-8888"]
+2022-09-22 21:42:00,547 INFO [restartedMain] o.s.b.a.l.ConditionEvaluationReportLoggingListener [ConditionEvaluationReportLoggingListener.java:136] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-09-22 21:42:11,428 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:55] Starting CommunityApplication using Java 1.8.0_332 on DESKTOP-9KE8JKH with PID 37484 (E:\SpringBoot\community\target\classes started by 15541 in E:\SpringBoot\community)
+2022-09-22 21:42:11,429 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2022-09-22 21:42:11,597 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:262] Multiple Spring Data modules found, entering strict repository configuration mode
+2022-09-22 21:42:11,597 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-09-22 21:42:11,601 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2022-09-22 21:42:11,742 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 7077 (http)
+2022-09-22 21:42:11,742 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2022-09-22 21:42:11,742 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-09-22 21:42:11,743 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-09-22 21:42:11,743 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2022-09-22 21:42:11,743 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-7077"]
+2022-09-22 21:42:11,744 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2022-09-22 21:42:11,744 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-22 21:42:11,777 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2022-09-22 21:42:11,777 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:292] Root WebApplicationContext: initialization completed in 347 ms
+2022-09-22 21:42:12,349 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2022-09-22 21:42:12,384 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:55] Starting CommunityApplication using Java 1.8.0_332 on DESKTOP-9KE8JKH with PID 39796 (E:\SpringBoot\community\target\classes started by 15541 in E:\SpringBoot\community)
+2022-09-22 21:42:12,386 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2022-09-22 21:42:12,418 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-09-22 21:42:12,418 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-09-22 21:42:12,668 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2022-09-22 21:42:12,678 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-7077"]
+2022-09-22 21:42:12,680 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 7077 (http) with context path '/community'
+2022-09-22 21:42:12,683 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:61] Started CommunityApplication in 1.277 seconds (JVM running for 9644.793)
+2022-09-22 21:42:12,685 INFO [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [ConditionEvaluationDeltaLoggingListener.java:63] Condition evaluation unchanged
+2022-09-22 21:42:12,932 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:262] Multiple Spring Data modules found, entering strict repository configuration mode
+2022-09-22 21:42:12,934 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-09-22 21:42:12,951 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2022-09-22 21:42:13,520 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 7077 (http)
+2022-09-22 21:42:13,520 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2022-09-22 21:42:13,521 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-09-22 21:42:13,521 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-09-22 21:42:13,523 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2022-09-22 21:42:13,529 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-7077"]
+2022-09-22 21:42:13,530 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2022-09-22 21:42:13,530 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-22 21:42:13,621 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2022-09-22 21:42:13,622 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:292] Root WebApplicationContext: initialization completed in 1203 ms
+2022-09-22 21:42:14,519 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2022-09-22 21:42:14,925 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-7077"]
+2022-09-22 21:42:14,963 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Pausing ProtocolHandler ["http-nio-7077"]
+2022-09-22 21:42:14,963 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
+2022-09-22 21:42:14,967 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Stopping ProtocolHandler ["http-nio-7077"]
+2022-09-22 21:42:14,968 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Destroying ProtocolHandler ["http-nio-7077"]
+2022-09-22 21:42:14,973 INFO [restartedMain] o.s.b.a.l.ConditionEvaluationReportLoggingListener [ConditionEvaluationReportLoggingListener.java:136] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-09-22 21:42:37,282 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:55] Starting CommunityApplication using Java 1.8.0_332 on DESKTOP-9KE8JKH with PID 37484 (E:\SpringBoot\community\target\classes started by 15541 in E:\SpringBoot\community)
+2022-09-22 21:42:37,282 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2022-09-22 21:42:37,476 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:262] Multiple Spring Data modules found, entering strict repository configuration mode
+2022-09-22 21:42:37,477 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-09-22 21:42:37,480 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2022-09-22 21:42:37,737 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 9090 (http)
+2022-09-22 21:42:37,737 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2022-09-22 21:42:37,737 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-09-22 21:42:37,738 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-09-22 21:42:37,738 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2022-09-22 21:42:37,738 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-9090"]
+2022-09-22 21:42:37,739 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2022-09-22 21:42:37,739 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-22 21:42:37,767 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2022-09-22 21:42:37,768 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:292] Root WebApplicationContext: initialization completed in 484 ms
+2022-09-22 21:42:37,822 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:55] Starting CommunityApplication using Java 1.8.0_332 on DESKTOP-9KE8JKH with PID 10780 (E:\SpringBoot\community\target\classes started by 15541 in E:\SpringBoot\community)
+2022-09-22 21:42:37,824 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2022-09-22 21:42:37,859 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-09-22 21:42:37,860 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-09-22 21:42:38,178 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2022-09-22 21:42:38,410 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:262] Multiple Spring Data modules found, entering strict repository configuration mode
+2022-09-22 21:42:38,411 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-09-22 21:42:38,428 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2022-09-22 21:42:38,495 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2022-09-22 21:42:38,505 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-9090"]
+2022-09-22 21:42:38,507 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 9090 (http) with context path '/community'
+2022-09-22 21:42:38,510 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:61] Started CommunityApplication in 1.261 seconds (JVM running for 9670.62)
+2022-09-22 21:42:38,511 INFO [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [ConditionEvaluationDeltaLoggingListener.java:63] Condition evaluation unchanged
+2022-09-22 21:42:39,006 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 9090 (http)
+2022-09-22 21:42:39,006 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2022-09-22 21:42:39,006 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-09-22 21:42:39,007 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-09-22 21:42:39,009 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2022-09-22 21:42:39,015 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-9090"]
+2022-09-22 21:42:39,016 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2022-09-22 21:42:39,016 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-22 21:42:39,104 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2022-09-22 21:42:39,104 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:292] Root WebApplicationContext: initialization completed in 1244 ms
+2022-09-22 21:42:40,085 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2022-09-22 21:42:40,508 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-9090"]
+2022-09-22 21:42:40,527 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Pausing ProtocolHandler ["http-nio-9090"]
+2022-09-22 21:42:40,527 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
+2022-09-22 21:42:40,530 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Stopping ProtocolHandler ["http-nio-9090"]
+2022-09-22 21:42:40,530 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Destroying ProtocolHandler ["http-nio-9090"]
+2022-09-22 21:42:40,536 INFO [restartedMain] o.s.b.a.l.ConditionEvaluationReportLoggingListener [ConditionEvaluationReportLoggingListener.java:136] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-09-22 21:43:08,915 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:55] Starting CommunityApplication using Java 1.8.0_332 on DESKTOP-9KE8JKH with PID 38064 (E:\SpringBoot\community\target\classes started by 15541 in E:\SpringBoot\community)
+2022-09-22 21:43:08,916 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2022-09-22 21:43:08,954 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-09-22 21:43:08,954 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-09-22 21:43:09,456 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:262] Multiple Spring Data modules found, entering strict repository configuration mode
+2022-09-22 21:43:09,457 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-09-22 21:43:09,474 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2022-09-22 21:43:10,100 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 9090 (http)
+2022-09-22 21:43:10,101 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2022-09-22 21:43:10,101 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-09-22 21:43:10,101 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-09-22 21:43:10,104 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2022-09-22 21:43:10,110 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-9090"]
+2022-09-22 21:43:10,110 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2022-09-22 21:43:10,111 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-22 21:43:10,208 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2022-09-22 21:43:10,208 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:292] Root WebApplicationContext: initialization completed in 1253 ms
+2022-09-22 21:43:11,106 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2022-09-22 21:43:11,509 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2022-09-22 21:43:11,526 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-9090"]
+2022-09-22 21:43:11,540 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 9090 (http) with context path '/community'
+2022-09-22 21:43:11,549 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:61] Started CommunityApplication in 3.03 seconds (JVM running for 4.059)
+2022-09-22 21:43:45,479 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:55] Starting CommunityApplication using Java 1.8.0_332 on DESKTOP-9KE8JKH with PID 30144 (E:\SpringBoot\community\target\classes started by 15541 in E:\SpringBoot\community)
+2022-09-22 21:43:45,480 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2022-09-22 21:43:45,512 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-09-22 21:43:45,512 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-09-22 21:43:46,003 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:262] Multiple Spring Data modules found, entering strict repository configuration mode
+2022-09-22 21:43:46,004 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-09-22 21:43:46,021 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2022-09-22 21:43:46,591 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8081 (http)
+2022-09-22 21:43:46,591 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2022-09-22 21:43:46,592 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-09-22 21:43:46,592 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-09-22 21:43:46,595 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2022-09-22 21:43:46,601 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8081"]
+2022-09-22 21:43:46,601 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2022-09-22 21:43:46,601 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-22 21:43:46,693 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2022-09-22 21:43:46,694 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:292] Root WebApplicationContext: initialization completed in 1181 ms
+2022-09-22 21:43:47,593 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2022-09-22 21:43:47,982 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2022-09-22 21:43:47,998 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8081"]
+2022-09-22 21:43:48,012 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8081 (http) with context path '/community'
+2022-09-22 21:43:48,021 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:61] Started CommunityApplication in 2.945 seconds (JVM running for 4.084)
+2022-09-22 21:43:51,651 INFO [http-nio-8081-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-22 21:43:51,651 INFO [http-nio-8081-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2022-09-22 21:43:51,652 INFO [http-nio-8081-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 1 ms
+2022-09-22 21:43:51,672 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:43:51],访问了[com.nowcoder.community.service.UserService.findLoginTicket].
+2022-09-22 21:43:51,687 INFO [http-nio-8081-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2022-09-22 21:43:51,807 INFO [http-nio-8081-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2022-09-22 21:43:51,852 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:43:51],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:43:51,870 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:43:51],访问了[com.nowcoder.community.service.DiscussPostService.findDiscussPostRows].
+2022-09-22 21:43:51,890 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:43:51],访问了[com.nowcoder.community.service.DiscussPostService.findDiscussPosts].
+2022-09-22 21:43:51,897 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:43:51],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:43:51,901 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:43:51],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:43:51,903 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:43:51],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:43:51,906 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:43:51],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:43:51,909 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:43:51],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:43:51,911 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:43:51],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:43:51,914 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:43:51],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:43:51,918 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:43:51],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:43:51,921 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:43:51],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:43:51,923 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:43:51],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:43:52,234 INFO [http-nio-8081-exec-3] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:43:52],访问了[com.nowcoder.community.service.UserService.findLoginTicket].
+2022-09-22 21:43:52,238 INFO [http-nio-8081-exec-3] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:43:52],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:44:05,378 INFO [http-nio-8081-exec-4] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:05],访问了[com.nowcoder.community.service.UserService.findLoginTicket].
+2022-09-22 21:44:05,383 INFO [http-nio-8081-exec-4] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:05],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:44:05,390 INFO [http-nio-8081-exec-4] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:05],访问了[com.nowcoder.community.service.UserService.findLoginTicket].
+2022-09-22 21:44:05,393 INFO [http-nio-8081-exec-4] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:05],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:44:14,581 INFO [http-nio-8081-exec-10] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:14],访问了[com.nowcoder.community.service.UserService.findLoginTicket].
+2022-09-22 21:44:14,586 INFO [http-nio-8081-exec-10] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:14],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:44:14,593 INFO [http-nio-8081-exec-10] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:14],访问了[com.nowcoder.community.service.DiscussPostService.findDiscussPostById].
+2022-09-22 21:44:14,596 INFO [http-nio-8081-exec-10] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:14],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:44:14,599 INFO [http-nio-8081-exec-10] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:14],访问了[com.nowcoder.community.service.CommentService.findCommentByEntity].
+2022-09-22 21:44:14,606 INFO [http-nio-8081-exec-10] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:14],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:44:14,608 INFO [http-nio-8081-exec-10] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:14],访问了[com.nowcoder.community.service.CommentService.findCommentByEntity].
+2022-09-22 21:44:14,611 INFO [http-nio-8081-exec-10] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:14],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:44:14,613 INFO [http-nio-8081-exec-10] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:14],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:44:14,615 INFO [http-nio-8081-exec-10] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:14],访问了[com.nowcoder.community.service.CommentService.findCommentCount].
+2022-09-22 21:44:14,617 INFO [http-nio-8081-exec-10] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:14],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:44:14,618 INFO [http-nio-8081-exec-10] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:14],访问了[com.nowcoder.community.service.CommentService.findCommentByEntity].
+2022-09-22 21:44:14,620 INFO [http-nio-8081-exec-10] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:14],访问了[com.nowcoder.community.service.CommentService.findCommentCount].
+2022-09-22 21:44:14,624 INFO [http-nio-8081-exec-10] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:14],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:44:14,626 INFO [http-nio-8081-exec-10] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:14],访问了[com.nowcoder.community.service.CommentService.findCommentByEntity].
+2022-09-22 21:44:14,628 INFO [http-nio-8081-exec-10] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:14],访问了[com.nowcoder.community.service.CommentService.findCommentCount].
+2022-09-22 21:44:14,629 INFO [http-nio-8081-exec-10] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:14],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:44:14,631 INFO [http-nio-8081-exec-10] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:14],访问了[com.nowcoder.community.service.CommentService.findCommentByEntity].
+2022-09-22 21:44:14,633 INFO [http-nio-8081-exec-10] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:14],访问了[com.nowcoder.community.service.CommentService.findCommentCount].
+2022-09-22 21:44:14,635 INFO [http-nio-8081-exec-10] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:14],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:44:14,637 INFO [http-nio-8081-exec-10] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:14],访问了[com.nowcoder.community.service.CommentService.findCommentByEntity].
+2022-09-22 21:44:14,639 INFO [http-nio-8081-exec-10] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:14],访问了[com.nowcoder.community.service.CommentService.findCommentCount].
+2022-09-22 21:44:16,021 INFO [http-nio-8081-exec-5] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:16],访问了[com.nowcoder.community.service.UserService.findLoginTicket].
+2022-09-22 21:44:16,025 INFO [http-nio-8081-exec-5] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:16],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:44:16,027 INFO [http-nio-8081-exec-5] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:16],访问了[com.nowcoder.community.service.LikeService.like].
+2022-09-22 21:44:16,897 INFO [http-nio-8081-exec-5] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:16],访问了[com.nowcoder.community.service.LikeService.findEntityLikeCount].
+2022-09-22 21:44:16,899 INFO [http-nio-8081-exec-5] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:16],访问了[com.nowcoder.community.service.LikeService.findEntityLikeStatus].
+2022-09-22 21:44:17,227 INFO [http-nio-8081-exec-4] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:17],访问了[com.nowcoder.community.service.UserService.findLoginTicket].
+2022-09-22 21:44:17,229 INFO [http-nio-8081-exec-4] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:17],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:44:17,231 INFO [http-nio-8081-exec-4] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:17],访问了[com.nowcoder.community.service.LikeService.like].
+2022-09-22 21:44:17,234 INFO [http-nio-8081-exec-4] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:17],访问了[com.nowcoder.community.service.LikeService.findEntityLikeCount].
+2022-09-22 21:44:17,235 INFO [http-nio-8081-exec-4] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:17],访问了[com.nowcoder.community.service.LikeService.findEntityLikeStatus].
+2022-09-22 21:44:17,811 INFO [http-nio-8081-exec-7] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:17],访问了[com.nowcoder.community.service.UserService.findLoginTicket].
+2022-09-22 21:44:17,813 INFO [http-nio-8081-exec-7] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:17],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:44:17,815 INFO [http-nio-8081-exec-7] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:17],访问了[com.nowcoder.community.service.LikeService.like].
+2022-09-22 21:44:17,817 INFO [http-nio-8081-exec-7] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:17],访问了[com.nowcoder.community.service.LikeService.findEntityLikeCount].
+2022-09-22 21:44:17,818 INFO [http-nio-8081-exec-7] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:17],访问了[com.nowcoder.community.service.LikeService.findEntityLikeStatus].
+2022-09-22 21:44:18,403 INFO [http-nio-8081-exec-9] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:18],访问了[com.nowcoder.community.service.UserService.findLoginTicket].
+2022-09-22 21:44:18,405 INFO [http-nio-8081-exec-9] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:18],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:44:18,407 INFO [http-nio-8081-exec-9] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:18],访问了[com.nowcoder.community.service.LikeService.like].
+2022-09-22 21:44:18,409 INFO [http-nio-8081-exec-9] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:18],访问了[com.nowcoder.community.service.LikeService.findEntityLikeCount].
+2022-09-22 21:44:18,413 INFO [http-nio-8081-exec-9] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:18],访问了[com.nowcoder.community.service.LikeService.findEntityLikeStatus].
+2022-09-22 21:44:18,804 INFO [http-nio-8081-exec-8] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:18],访问了[com.nowcoder.community.service.UserService.findLoginTicket].
+2022-09-22 21:44:18,806 INFO [http-nio-8081-exec-8] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:18],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:44:18,808 INFO [http-nio-8081-exec-8] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:18],访问了[com.nowcoder.community.service.LikeService.like].
+2022-09-22 21:44:18,810 INFO [http-nio-8081-exec-8] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:18],访问了[com.nowcoder.community.service.LikeService.findEntityLikeCount].
+2022-09-22 21:44:18,811 INFO [http-nio-8081-exec-8] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:18],访问了[com.nowcoder.community.service.LikeService.findEntityLikeStatus].
+2022-09-22 21:44:21,309 INFO [http-nio-8081-exec-10] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:21],访问了[com.nowcoder.community.service.UserService.findLoginTicket].
+2022-09-22 21:44:21,310 INFO [http-nio-8081-exec-10] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:21],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:44:21,312 INFO [http-nio-8081-exec-10] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:21],访问了[com.nowcoder.community.service.LikeService.like].
+2022-09-22 21:44:21,315 INFO [http-nio-8081-exec-10] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:21],访问了[com.nowcoder.community.service.LikeService.findEntityLikeCount].
+2022-09-22 21:44:21,316 INFO [http-nio-8081-exec-10] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:21],访问了[com.nowcoder.community.service.LikeService.findEntityLikeStatus].
+2022-09-22 21:44:22,147 INFO [http-nio-8081-exec-2] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:22],访问了[com.nowcoder.community.service.UserService.findLoginTicket].
+2022-09-22 21:44:22,149 INFO [http-nio-8081-exec-2] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:22],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:44:22,151 INFO [http-nio-8081-exec-2] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:22],访问了[com.nowcoder.community.service.LikeService.like].
+2022-09-22 21:44:22,154 INFO [http-nio-8081-exec-2] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:22],访问了[com.nowcoder.community.service.LikeService.findEntityLikeCount].
+2022-09-22 21:44:22,155 INFO [http-nio-8081-exec-2] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:22],访问了[com.nowcoder.community.service.LikeService.findEntityLikeStatus].
+2022-09-22 21:44:26,418 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:26],访问了[com.nowcoder.community.service.UserService.findLoginTicket].
+2022-09-22 21:44:26,421 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:26],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:44:26,422 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:26],访问了[com.nowcoder.community.service.LikeService.like].
+2022-09-22 21:44:26,424 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:26],访问了[com.nowcoder.community.service.LikeService.findEntityLikeCount].
+2022-09-22 21:44:26,425 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:26],访问了[com.nowcoder.community.service.LikeService.findEntityLikeStatus].
+2022-09-22 21:44:28,411 INFO [http-nio-8081-exec-3] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:28],访问了[com.nowcoder.community.service.UserService.findLoginTicket].
+2022-09-22 21:44:28,413 INFO [http-nio-8081-exec-3] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:28],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:44:28,416 INFO [http-nio-8081-exec-3] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:28],访问了[com.nowcoder.community.service.LikeService.like].
+2022-09-22 21:44:28,418 INFO [http-nio-8081-exec-3] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:28],访问了[com.nowcoder.community.service.LikeService.findEntityLikeCount].
+2022-09-22 21:44:28,419 INFO [http-nio-8081-exec-3] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:28],访问了[com.nowcoder.community.service.LikeService.findEntityLikeStatus].
+2022-09-22 21:44:28,954 INFO [http-nio-8081-exec-6] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:28],访问了[com.nowcoder.community.service.UserService.findLoginTicket].
+2022-09-22 21:44:28,957 INFO [http-nio-8081-exec-6] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:28],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:44:28,959 INFO [http-nio-8081-exec-6] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:28],访问了[com.nowcoder.community.service.LikeService.like].
+2022-09-22 21:44:28,961 INFO [http-nio-8081-exec-6] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:28],访问了[com.nowcoder.community.service.LikeService.findEntityLikeCount].
+2022-09-22 21:44:28,962 INFO [http-nio-8081-exec-6] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:28],访问了[com.nowcoder.community.service.LikeService.findEntityLikeStatus].
+2022-09-22 21:44:30,891 INFO [http-nio-8081-exec-5] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:30],访问了[com.nowcoder.community.service.UserService.findLoginTicket].
+2022-09-22 21:44:30,894 INFO [http-nio-8081-exec-5] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:30],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:44:30,895 INFO [http-nio-8081-exec-5] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:30],访问了[com.nowcoder.community.service.LikeService.like].
+2022-09-22 21:44:30,897 INFO [http-nio-8081-exec-5] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:30],访问了[com.nowcoder.community.service.LikeService.findEntityLikeCount].
+2022-09-22 21:44:30,898 INFO [http-nio-8081-exec-5] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:30],访问了[com.nowcoder.community.service.LikeService.findEntityLikeStatus].
+2022-09-22 21:44:31,507 INFO [http-nio-8081-exec-4] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:31],访问了[com.nowcoder.community.service.UserService.findLoginTicket].
+2022-09-22 21:44:31,509 INFO [http-nio-8081-exec-4] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:31],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:44:31,511 INFO [http-nio-8081-exec-4] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:31],访问了[com.nowcoder.community.service.LikeService.like].
+2022-09-22 21:44:31,512 INFO [http-nio-8081-exec-4] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:31],访问了[com.nowcoder.community.service.LikeService.findEntityLikeCount].
+2022-09-22 21:44:31,513 INFO [http-nio-8081-exec-4] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:31],访问了[com.nowcoder.community.service.LikeService.findEntityLikeStatus].
+2022-09-22 21:44:31,835 INFO [http-nio-8081-exec-7] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:31],访问了[com.nowcoder.community.service.UserService.findLoginTicket].
+2022-09-22 21:44:31,836 INFO [http-nio-8081-exec-7] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:31],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:44:31,838 INFO [http-nio-8081-exec-7] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:31],访问了[com.nowcoder.community.service.LikeService.like].
+2022-09-22 21:44:31,840 INFO [http-nio-8081-exec-7] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:31],访问了[com.nowcoder.community.service.LikeService.findEntityLikeCount].
+2022-09-22 21:44:31,840 INFO [http-nio-8081-exec-7] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:31],访问了[com.nowcoder.community.service.LikeService.findEntityLikeStatus].
+2022-09-22 21:44:32,196 INFO [http-nio-8081-exec-9] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:32],访问了[com.nowcoder.community.service.UserService.findLoginTicket].
+2022-09-22 21:44:32,198 INFO [http-nio-8081-exec-9] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:32],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:44:32,200 INFO [http-nio-8081-exec-9] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:32],访问了[com.nowcoder.community.service.LikeService.like].
+2022-09-22 21:44:32,201 INFO [http-nio-8081-exec-9] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:32],访问了[com.nowcoder.community.service.LikeService.findEntityLikeCount].
+2022-09-22 21:44:32,202 INFO [http-nio-8081-exec-9] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:32],访问了[com.nowcoder.community.service.LikeService.findEntityLikeStatus].
+2022-09-22 21:44:32,779 INFO [http-nio-8081-exec-8] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:32],访问了[com.nowcoder.community.service.UserService.findLoginTicket].
+2022-09-22 21:44:32,781 INFO [http-nio-8081-exec-8] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:32],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:44:32,783 INFO [http-nio-8081-exec-8] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:32],访问了[com.nowcoder.community.service.LikeService.like].
+2022-09-22 21:44:32,785 INFO [http-nio-8081-exec-8] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:32],访问了[com.nowcoder.community.service.LikeService.findEntityLikeCount].
+2022-09-22 21:44:32,786 INFO [http-nio-8081-exec-8] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:32],访问了[com.nowcoder.community.service.LikeService.findEntityLikeStatus].
+2022-09-22 21:44:33,180 INFO [http-nio-8081-exec-10] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:33],访问了[com.nowcoder.community.service.UserService.findLoginTicket].
+2022-09-22 21:44:33,182 INFO [http-nio-8081-exec-10] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:33],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:44:33,184 INFO [http-nio-8081-exec-10] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:33],访问了[com.nowcoder.community.service.LikeService.like].
+2022-09-22 21:44:33,186 INFO [http-nio-8081-exec-10] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:33],访问了[com.nowcoder.community.service.LikeService.findEntityLikeCount].
+2022-09-22 21:44:33,187 INFO [http-nio-8081-exec-10] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:33],访问了[com.nowcoder.community.service.LikeService.findEntityLikeStatus].
+2022-09-22 21:44:33,563 INFO [http-nio-8081-exec-2] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:33],访问了[com.nowcoder.community.service.UserService.findLoginTicket].
+2022-09-22 21:44:33,565 INFO [http-nio-8081-exec-2] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:33],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:44:33,567 INFO [http-nio-8081-exec-2] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:33],访问了[com.nowcoder.community.service.LikeService.like].
+2022-09-22 21:44:33,568 INFO [http-nio-8081-exec-2] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:33],访问了[com.nowcoder.community.service.LikeService.findEntityLikeCount].
+2022-09-22 21:44:33,569 INFO [http-nio-8081-exec-2] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:44:33],访问了[com.nowcoder.community.service.LikeService.findEntityLikeStatus].
+2022-09-22 21:46:38,064 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2022-09-22 21:46:38,072 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2022-09-22 21:46:43,198 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:55] Starting CommunityApplication using Java 1.8.0_332 on DESKTOP-9KE8JKH with PID 21612 (E:\SpringBoot\community\target\classes started by 15541 in E:\SpringBoot\community)
+2022-09-22 21:46:43,200 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2022-09-22 21:46:43,237 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-09-22 21:46:43,238 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-09-22 21:46:43,735 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:262] Multiple Spring Data modules found, entering strict repository configuration mode
+2022-09-22 21:46:43,737 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-09-22 21:46:43,755 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2022-09-22 21:46:44,336 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8081 (http)
+2022-09-22 21:46:44,336 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2022-09-22 21:46:44,337 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-09-22 21:46:44,337 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-09-22 21:46:44,339 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2022-09-22 21:46:44,345 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8081"]
+2022-09-22 21:46:44,346 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2022-09-22 21:46:44,346 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-22 21:46:44,441 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2022-09-22 21:46:44,442 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:292] Root WebApplicationContext: initialization completed in 1204 ms
+2022-09-22 21:46:45,353 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2022-09-22 21:46:45,757 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2022-09-22 21:46:45,773 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8081"]
+2022-09-22 21:46:45,787 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8081 (http) with context path '/community'
+2022-09-22 21:46:45,795 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:61] Started CommunityApplication in 2.998 seconds (JVM running for 4.119)
+2022-09-22 21:46:52,320 INFO [http-nio-8081-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-22 21:46:52,320 INFO [http-nio-8081-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2022-09-22 21:46:52,321 INFO [http-nio-8081-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 1 ms
+2022-09-22 21:46:52,338 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:46:52],访问了[com.nowcoder.community.service.UserService.findLoginTicket].
+2022-09-22 21:46:52,353 INFO [http-nio-8081-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2022-09-22 21:46:52,455 INFO [http-nio-8081-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2022-09-22 21:46:52,500 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:46:52],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:46:52,522 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:46:52],访问了[com.nowcoder.community.service.DiscussPostService.findDiscussPostById].
+2022-09-22 21:46:52,529 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:46:52],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:46:52,532 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:46:52],访问了[com.nowcoder.community.service.CommentService.findCommentByEntity].
+2022-09-22 21:46:52,540 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:46:52],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:46:52,543 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:46:52],访问了[com.nowcoder.community.service.CommentService.findCommentByEntity].
+2022-09-22 21:46:52,546 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:46:52],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:46:52,548 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:46:52],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:46:52,552 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:46:52],访问了[com.nowcoder.community.service.CommentService.findCommentCount].
+2022-09-22 21:46:52,557 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:46:52],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:46:52,560 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:46:52],访问了[com.nowcoder.community.service.CommentService.findCommentByEntity].
+2022-09-22 21:46:52,563 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:46:52],访问了[com.nowcoder.community.service.CommentService.findCommentCount].
+2022-09-22 21:46:52,565 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:46:52],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:46:52,569 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:46:52],访问了[com.nowcoder.community.service.CommentService.findCommentByEntity].
+2022-09-22 21:46:52,572 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:46:52],访问了[com.nowcoder.community.service.CommentService.findCommentCount].
+2022-09-22 21:46:52,576 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:46:52],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:46:52,579 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:46:52],访问了[com.nowcoder.community.service.CommentService.findCommentByEntity].
+2022-09-22 21:46:52,581 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:46:52],访问了[com.nowcoder.community.service.CommentService.findCommentCount].
+2022-09-22 21:46:52,584 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:46:52],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:46:52,589 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:46:52],访问了[com.nowcoder.community.service.CommentService.findCommentByEntity].
+2022-09-22 21:46:52,591 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:46:52],访问了[com.nowcoder.community.service.CommentService.findCommentCount].
+2022-09-22 21:46:55,070 INFO [http-nio-8081-exec-6] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:46:55],访问了[com.nowcoder.community.service.UserService.findLoginTicket].
+2022-09-22 21:46:55,074 INFO [http-nio-8081-exec-6] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:46:55],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:46:55,079 INFO [http-nio-8081-exec-6] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:46:55],访问了[com.nowcoder.community.service.LikeService.like].
+2022-09-22 21:46:55,757 INFO [http-nio-8081-exec-7] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:46:55],访问了[com.nowcoder.community.service.UserService.findLoginTicket].
+2022-09-22 21:46:55,761 INFO [http-nio-8081-exec-7] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:46:55],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:46:55,763 INFO [http-nio-8081-exec-7] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:46:55],访问了[com.nowcoder.community.service.LikeService.like].
+2022-09-22 21:46:55,834 INFO [http-nio-8081-exec-7] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:46:55],访问了[com.nowcoder.community.service.LikeService.findEntityLikeCount].
+2022-09-22 21:46:55,834 INFO [http-nio-8081-exec-6] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:46:55],访问了[com.nowcoder.community.service.LikeService.findEntityLikeCount].
+2022-09-22 21:46:55,837 INFO [http-nio-8081-exec-7] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:46:55],访问了[com.nowcoder.community.service.LikeService.findEntityLikeStatus].
+2022-09-22 21:46:55,837 INFO [http-nio-8081-exec-6] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:46:55],访问了[com.nowcoder.community.service.LikeService.findEntityLikeStatus].
+2022-09-22 21:46:56,541 INFO [http-nio-8081-exec-8] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:46:56],访问了[com.nowcoder.community.service.UserService.findLoginTicket].
+2022-09-22 21:46:56,543 INFO [http-nio-8081-exec-8] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:46:56],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:46:56,545 INFO [http-nio-8081-exec-8] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:46:56],访问了[com.nowcoder.community.service.LikeService.like].
+2022-09-22 21:46:56,547 INFO [http-nio-8081-exec-8] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:46:56],访问了[com.nowcoder.community.service.LikeService.findEntityLikeCount].
+2022-09-22 21:46:56,549 INFO [http-nio-8081-exec-8] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:46:56],访问了[com.nowcoder.community.service.LikeService.findEntityLikeStatus].
+2022-09-22 21:46:57,052 INFO [http-nio-8081-exec-9] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:46:57],访问了[com.nowcoder.community.service.UserService.findLoginTicket].
+2022-09-22 21:46:57,055 INFO [http-nio-8081-exec-9] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:46:57],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:46:57,057 INFO [http-nio-8081-exec-9] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:46:57],访问了[com.nowcoder.community.service.LikeService.like].
+2022-09-22 21:46:57,061 INFO [http-nio-8081-exec-9] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:46:57],访问了[com.nowcoder.community.service.LikeService.findEntityLikeCount].
+2022-09-22 21:46:57,063 INFO [http-nio-8081-exec-9] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:46:57],访问了[com.nowcoder.community.service.LikeService.findEntityLikeStatus].
+2022-09-22 21:46:57,908 INFO [http-nio-8081-exec-10] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:46:57],访问了[com.nowcoder.community.service.UserService.findLoginTicket].
+2022-09-22 21:46:57,910 INFO [http-nio-8081-exec-10] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:46:57],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:46:57,912 INFO [http-nio-8081-exec-10] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:46:57],访问了[com.nowcoder.community.service.LikeService.like].
+2022-09-22 21:46:57,914 INFO [http-nio-8081-exec-10] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:46:57],访问了[com.nowcoder.community.service.LikeService.findEntityLikeCount].
+2022-09-22 21:46:57,915 INFO [http-nio-8081-exec-10] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:46:57],访问了[com.nowcoder.community.service.LikeService.findEntityLikeStatus].
+2022-09-22 21:46:59,539 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:46:59],访问了[com.nowcoder.community.service.UserService.findLoginTicket].
+2022-09-22 21:46:59,541 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:46:59],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:46:59,543 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:46:59],访问了[com.nowcoder.community.service.LikeService.like].
+2022-09-22 21:46:59,545 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:46:59],访问了[com.nowcoder.community.service.LikeService.findEntityLikeCount].
+2022-09-22 21:46:59,546 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:46:59],访问了[com.nowcoder.community.service.LikeService.findEntityLikeStatus].
+2022-09-22 21:46:59,988 INFO [http-nio-8081-exec-3] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:46:59],访问了[com.nowcoder.community.service.UserService.findLoginTicket].
+2022-09-22 21:46:59,991 INFO [http-nio-8081-exec-3] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:46:59],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:46:59,994 INFO [http-nio-8081-exec-3] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:46:59],访问了[com.nowcoder.community.service.LikeService.like].
+2022-09-22 21:46:59,996 INFO [http-nio-8081-exec-3] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:46:59],访问了[com.nowcoder.community.service.LikeService.findEntityLikeCount].
+2022-09-22 21:46:59,997 INFO [http-nio-8081-exec-3] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:46:59],访问了[com.nowcoder.community.service.LikeService.findEntityLikeStatus].
+2022-09-22 21:47:00,396 INFO [http-nio-8081-exec-2] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:47:00],访问了[com.nowcoder.community.service.UserService.findLoginTicket].
+2022-09-22 21:47:00,398 INFO [http-nio-8081-exec-2] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:47:00],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:47:00,400 INFO [http-nio-8081-exec-2] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:47:00],访问了[com.nowcoder.community.service.LikeService.like].
+2022-09-22 21:47:00,403 INFO [http-nio-8081-exec-2] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:47:00],访问了[com.nowcoder.community.service.LikeService.findEntityLikeCount].
+2022-09-22 21:47:00,404 INFO [http-nio-8081-exec-2] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:47:00],访问了[com.nowcoder.community.service.LikeService.findEntityLikeStatus].
+2022-09-22 21:47:00,780 INFO [http-nio-8081-exec-5] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:47:00],访问了[com.nowcoder.community.service.UserService.findLoginTicket].
+2022-09-22 21:47:00,783 INFO [http-nio-8081-exec-5] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:47:00],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:47:00,785 INFO [http-nio-8081-exec-5] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:47:00],访问了[com.nowcoder.community.service.LikeService.like].
+2022-09-22 21:47:00,787 INFO [http-nio-8081-exec-5] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:47:00],访问了[com.nowcoder.community.service.LikeService.findEntityLikeCount].
+2022-09-22 21:47:00,788 INFO [http-nio-8081-exec-5] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:47:00],访问了[com.nowcoder.community.service.LikeService.findEntityLikeStatus].
+2022-09-22 21:47:03,757 INFO [http-nio-8081-exec-4] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:47:03],访问了[com.nowcoder.community.service.UserService.findLoginTicket].
+2022-09-22 21:47:03,759 INFO [http-nio-8081-exec-4] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:47:03],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:47:03,761 INFO [http-nio-8081-exec-4] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:47:03],访问了[com.nowcoder.community.service.LikeService.like].
+2022-09-22 21:47:03,763 INFO [http-nio-8081-exec-4] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:47:03],访问了[com.nowcoder.community.service.LikeService.findEntityLikeCount].
+2022-09-22 21:47:03,765 INFO [http-nio-8081-exec-4] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:47:03],访问了[com.nowcoder.community.service.LikeService.findEntityLikeStatus].
+2022-09-22 21:47:04,188 INFO [http-nio-8081-exec-6] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:47:04],访问了[com.nowcoder.community.service.UserService.findLoginTicket].
+2022-09-22 21:47:04,190 INFO [http-nio-8081-exec-6] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:47:04],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:47:04,191 INFO [http-nio-8081-exec-6] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:47:04],访问了[com.nowcoder.community.service.LikeService.like].
+2022-09-22 21:47:04,193 INFO [http-nio-8081-exec-6] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:47:04],访问了[com.nowcoder.community.service.LikeService.findEntityLikeCount].
+2022-09-22 21:47:04,194 INFO [http-nio-8081-exec-6] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:47:04],访问了[com.nowcoder.community.service.LikeService.findEntityLikeStatus].
+2022-09-22 21:47:05,028 INFO [http-nio-8081-exec-7] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:47:05],访问了[com.nowcoder.community.service.UserService.findLoginTicket].
+2022-09-22 21:47:05,031 INFO [http-nio-8081-exec-7] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:47:05],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:47:05,033 INFO [http-nio-8081-exec-7] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:47:05],访问了[com.nowcoder.community.service.LikeService.like].
+2022-09-22 21:47:05,035 INFO [http-nio-8081-exec-7] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:47:05],访问了[com.nowcoder.community.service.LikeService.findEntityLikeCount].
+2022-09-22 21:47:05,036 INFO [http-nio-8081-exec-7] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:47:05],访问了[com.nowcoder.community.service.LikeService.findEntityLikeStatus].
+2022-09-22 21:47:05,805 INFO [http-nio-8081-exec-8] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:47:05],访问了[com.nowcoder.community.service.UserService.findLoginTicket].
+2022-09-22 21:47:05,807 INFO [http-nio-8081-exec-8] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:47:05],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:47:05,809 INFO [http-nio-8081-exec-8] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:47:05],访问了[com.nowcoder.community.service.LikeService.like].
+2022-09-22 21:47:05,811 INFO [http-nio-8081-exec-8] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:47:05],访问了[com.nowcoder.community.service.LikeService.findEntityLikeCount].
+2022-09-22 21:47:05,812 INFO [http-nio-8081-exec-8] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:47:05],访问了[com.nowcoder.community.service.LikeService.findEntityLikeStatus].
+2022-09-22 21:47:06,660 INFO [http-nio-8081-exec-9] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:47:06],访问了[com.nowcoder.community.service.UserService.findLoginTicket].
+2022-09-22 21:47:06,662 INFO [http-nio-8081-exec-9] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:47:06],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:47:06,664 INFO [http-nio-8081-exec-9] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:47:06],访问了[com.nowcoder.community.service.LikeService.like].
+2022-09-22 21:47:06,666 INFO [http-nio-8081-exec-9] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:47:06],访问了[com.nowcoder.community.service.LikeService.findEntityLikeCount].
+2022-09-22 21:47:06,667 INFO [http-nio-8081-exec-9] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:47:06],访问了[com.nowcoder.community.service.LikeService.findEntityLikeStatus].
+2022-09-22 21:47:06,980 INFO [http-nio-8081-exec-10] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:47:06],访问了[com.nowcoder.community.service.UserService.findLoginTicket].
+2022-09-22 21:47:06,983 INFO [http-nio-8081-exec-10] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:47:06],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:47:06,984 INFO [http-nio-8081-exec-10] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:47:06],访问了[com.nowcoder.community.service.LikeService.like].
+2022-09-22 21:47:06,986 INFO [http-nio-8081-exec-10] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:47:06],访问了[com.nowcoder.community.service.LikeService.findEntityLikeCount].
+2022-09-22 21:47:06,987 INFO [http-nio-8081-exec-10] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:47:06],访问了[com.nowcoder.community.service.LikeService.findEntityLikeStatus].
+2022-09-22 21:47:07,940 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:47:07],访问了[com.nowcoder.community.service.UserService.findLoginTicket].
+2022-09-22 21:47:07,942 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:47:07],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:47:07,944 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:47:07],访问了[com.nowcoder.community.service.LikeService.like].
+2022-09-22 21:47:07,945 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:47:07],访问了[com.nowcoder.community.service.LikeService.findEntityLikeCount].
+2022-09-22 21:47:07,946 INFO [http-nio-8081-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:47:07],访问了[com.nowcoder.community.service.LikeService.findEntityLikeStatus].
+2022-09-22 21:47:08,244 INFO [http-nio-8081-exec-3] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:47:08],访问了[com.nowcoder.community.service.UserService.findLoginTicket].
+2022-09-22 21:47:08,246 INFO [http-nio-8081-exec-3] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:47:08],访问了[com.nowcoder.community.service.UserService.findUserById].
+2022-09-22 21:47:08,248 INFO [http-nio-8081-exec-3] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:47:08],访问了[com.nowcoder.community.service.LikeService.like].
+2022-09-22 21:47:08,250 INFO [http-nio-8081-exec-3] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:47:08],访问了[com.nowcoder.community.service.LikeService.findEntityLikeCount].
+2022-09-22 21:47:08,251 INFO [http-nio-8081-exec-3] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:37] 用户[0:0:0:0:0:0:0:1],在[2022-09-22 21:47:08],访问了[com.nowcoder.community.service.LikeService.findEntityLikeStatus].
+2022-09-22 23:41:02,611 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2022-09-22 23:41:02,614 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
