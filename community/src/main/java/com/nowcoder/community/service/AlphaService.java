@@ -6,8 +6,11 @@ import com.nowcoder.community.dao.UserMapper;
 import com.nowcoder.community.entity.DiscussPost;
 import com.nowcoder.community.entity.User;
 import com.nowcoder.community.util.CommunityUtil;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Scope;
+import org.springframework.scheduling.annotation.Async;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.TransactionDefinition;
 import org.springframework.transaction.TransactionStatus;
@@ -17,14 +20,14 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.transaction.support.TransactionCallback;
 import org.springframework.transaction.support.TransactionTemplate;
 
-import javax.annotation.PostConstruct;
-import javax.annotation.PreDestroy;
 import java.util.Date;
 
 @Service
 //@Scope参数默认singleton 单个实例输出  多个实例输出将参数改为prototype
 //@Scope("prototype")
 public class AlphaService {
+
+    private static final Logger logger = LoggerFactory.getLogger(AlphaService.class);
 
     @Autowired
     private AlphaDao alphaDao;
@@ -37,20 +40,6 @@ public class AlphaService {
 
     @Autowired
     private TransactionTemplate transactionTemplate;
-
-    public AlphaService(){
-        System.out.println("实例化AlphaService");
-    }
-
-    @PostConstruct
-    public void init(){
-        System.out.println("初始化AlphaService");
-    }
-
-    @PreDestroy
-    public void destroy(){
-        System.out.println("销毁AlphaService");
-    }
 
     public String find(){
         return  alphaDao.select();
@@ -113,6 +102,15 @@ public class AlphaService {
                 return "ok";
             }
         });
+    }
 
+    @Async  // 可以让该方法在多线程环境下，被异步调用
+    public void execute1(){
+        logger.debug("execute1");
+    }
+
+    @Scheduled(initialDelay = 10000, fixedRate = 1000)
+    public void execute2(){
+        logger.debug("execute2");
     }
 }
